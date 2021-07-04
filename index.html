@@ -1,128 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YGN Cybernoob</title>
-    <link rel="stylesheet" href="./style/responsive.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        .nav-title {
-            line-height: 50px;
-            display: inline;
-            padding-left: 1em;
-        }
-
-        .nav-bar {
-            width: 100%;
-            height: 50px;
-            background-color: #2e73ea;
-            color: #ffffff;
-            position: fixed;
-            top: 0;
-            z-index: 999;
-        }
-
-        #title {
-            font-size: large;
-            width: fit-content;
-        }
-
-        #profile {
-            height: 1000px;
-            float: left;
-            background-color: white;
-            margin-top: 50px;
-            
-        }
-
-        @media only screen and (min-width: 768px){
-            #profile{
-                box-shadow: #2e73ea 0px 0px 25px;
-            }
-        }
-
-        #detail {
-            height: 1000px;
-            float: left;
-        }
-
-        @media only screen and (min-width: 768px){
-            #detail{
-                margin-top: 50px;
-            }
-        }
-
-        .nav-title a {
-            color: white;
-            font-size: 1.3em;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        #img-cover {
-            height: 200px;
-            background-color: white;
-            background-image: url(./image/cover.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        #img-profile {
-            position: relative;
-            top: -80px;
-            margin: 0 auto 0 auto;
-            height: 120px;
-            width: 120px;
-
-            background-image: url(./image/profile.jpg);
-            background-size: contain;
-            border-radius: 100px;
-            border: #2e73ea solid 5px;
-        }
-
-
-        #name {
-            position: relative;
-            top: -70px;
-            margin: 0 auto 0 auto;
-            width: max-content;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #2e73ea;
-        }
-
-        #nickname {
-            font-size: 1rem;
-            color: teal;
-        }
-    </style>
+    <title>Welcome to my Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/font-awsome.js"></script>
 </head>
-
-<body>
-    <div class="nav-bar">
-        <div class="nav-title">
-            <a href="#">&lt;/Developer&gt;</a>
+<body id="bg-img">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
         </div>
 
-    </div>
-    <div id="profile" class="col-5">
-        <div id="img-cover"></div>
-        <div id="img-profile"></div>
-        <div id="name">Kyaw Nyein Phyo <span id="nickname">(ygnCybernoob)</span></div>
-    </div>
-    <div id="detail" class="col-7">
-        content side
-    </div>
-</body>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="#" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        My Works
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="home">
+        <h1 class="lg-heading">
+            Hi,<br>I'm <span class="text-secondary">Cybernoob</span>
+        </h1>
+        <h2 class="sm-heading">
+            Full Stack Mobile & Web Developer from Myanmar
+        </h2>
+        <div class="icons">
+            <a href="https://www.github.com/ygnCybernoob" target="blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="#https://www.facebook.com/saw.kyawnyein.7" target="blank">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.twitter.com/ygnCybernoob" target="blank">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#" target="blank">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
 </html>
