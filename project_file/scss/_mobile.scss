@@ -1,0 +1,143 @@
+
+@include mediaXl{
+    #status::after{
+        content: 'Xl';
+    }
+
+    #home{
+        padding: 4rem;
+    }
+
+    main#home h1{
+        margin-top: 20vh;
+    }
+
+    main#home h2{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+@include mediaLg{
+    #status::after{
+        content: 'Lg';
+    }
+
+    #home{
+        padding: 4rem;
+    }
+
+    main#home h1{
+        margin-top: 22vh;
+        font-size: 3.5rem;
+    }
+
+    main#home h2{
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .menu{
+        .portrait{
+            margin-top: 2.5rem;
+            width: 150px;
+            height: 150px;
+        }
+
+        .nav-item{
+            a{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+}
+
+@include mediaMd{
+    #status::after{
+        content: 'Md';
+    }
+
+
+    #home{
+        padding: 3.5rem;
+    }
+
+    main#home h1{
+        margin-top: 25vh;
+        line-height: 1.3;
+        font-size: 3.2rem;
+    }
+
+    main#home h2{
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .menu{
+        .portrait{
+            margin-top: 2.5rem;
+            width: 145px;
+            height: 145px;
+        }
+
+        .nav-item{
+            
+            a{
+                line-height: 1.3;    
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+}
+
+@include mediaSm{
+    
+    #status::after{
+        content: 'Sm';
+    }
+
+    #home{
+        padding: 2rem;
+    }
+
+    .icons{
+        a>i{
+            line-height: 1.3;
+        }
+        
+    }
+
+    .menu{
+        .portrait{
+            margin-top: 2.5rem;
+            width: 120px;
+            height: 120px;
+        }
+
+        .nav-item{
+            a{
+                line-height: 1.2;    
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    main#home h1{
+        margin-top: 32vh;
+        line-height: 1.2;
+        font-size: 2.6rem;
+    }
+
+    main#home h2{
+        margin-top: 1rem;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+
+}
+

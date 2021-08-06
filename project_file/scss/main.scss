@@ -1,0 +1,95 @@
+
+@import 'config';
+@import 'menu';
+@import 'mobile';
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    @include background;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2{
+    font-weight: bold;
+
+    &.lg-heading{
+        font-size: 4rem;
+    }
+
+    &.sm-heading{
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: #eee;
+    }
+}
+
+a{
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+main{
+
+    height: 100%;
+
+    .icons{
+        margin-top: 2rem;
+
+        a{
+            padding: 0.4rem;
+            text-decoration: none;
+
+            &:hover{&.icons a{
+                color: red;
+            }
+                @include easeOut;
+                color: $secondary-color;
+            }
+            // //github
+            // &:nth-child(1){
+            //     color: #fafafa;
+            // }
+            
+            // //facebook
+            // &:nth-child(2){
+            //     color: #3B5998;
+            // }
+
+            // //twitter
+            // &:nth-child(3){
+            //     color: #00acee;
+            // }
+
+            // //lindin
+            // &:nth-child(4){
+            //     color: #0e76a8;
+            // }
+        }
+    }
+
+    // &#home{
+    //     overflow: hidden;
+    //     h1{
+    //         margin-top: 18vh;
+    //     }
+    // }
+}

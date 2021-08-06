@@ -1,0 +1,265 @@
+.menu-btn {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #262626;
+  opacity: 0.9;
+  visibility: hidden;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu.show {
+  visibility: visible;
+}
+.menu .portrait {
+  width: 200px;
+  height: 200px;
+  background: url(../img/profile.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 3px #ee1a48;
+}
+.menu-branding, .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 2.5rem;
+}
+.menu-nav {
+  padding: 0;
+  list-style-type: none;
+}
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+.menu .nav-link:hover {
+  transition: all 0.5s ease-out;
+  color: #ee1a48;
+}
+.menu .nav-item.current > a {
+  color: #ee1a48;
+}
+.menu.show {
+  transform: translate3d(0, 0, 0);
+}
+
+@media screen and (min-width: 1171px) {
+  #status::after {
+    content: "Xl";
+  }
+
+  #home {
+    padding: 4rem;
+  }
+
+  main#home h1 {
+    margin-top: 20vh;
+  }
+
+  main#home h2 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #status::after {
+    content: "Lg";
+  }
+
+  #home {
+    padding: 4rem;
+  }
+
+  main#home h1 {
+    margin-top: 22vh;
+    font-size: 3.5rem;
+  }
+
+  main#home h2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .menu .portrait {
+    margin-top: 2.5rem;
+    width: 150px;
+    height: 150px;
+  }
+  .menu .nav-item a {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 768px) {
+  #status::after {
+    content: "Md";
+  }
+
+  #home {
+    padding: 3.5rem;
+  }
+
+  main#home h1 {
+    margin-top: 25vh;
+    line-height: 1.3;
+    font-size: 3.2rem;
+  }
+
+  main#home h2 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .menu .portrait {
+    margin-top: 2.5rem;
+    width: 145px;
+    height: 145px;
+  }
+  .menu .nav-item a {
+    line-height: 1.3;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 460px) {
+  #status::after {
+    content: "Sm";
+  }
+
+  #home {
+    padding: 2rem;
+  }
+
+  .icons a > i {
+    line-height: 1.3;
+  }
+
+  .menu .portrait {
+    margin-top: 2.5rem;
+    width: 120px;
+    height: 120px;
+  }
+  .menu .nav-item a {
+    line-height: 1.2;
+    font-size: 1.1rem;
+  }
+
+  main#home h1 {
+    margin-top: 32vh;
+    line-height: 1.2;
+    font-size: 2.6rem;
+  }
+
+  main#home h2 {
+    margin-top: 1rem;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+body#bg-img {
+  background: url(../img/bg1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+body#bg-img:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: -1;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+h1.lg-heading, h2.lg-heading {
+  font-size: 4rem;
+}
+h1.sm-heading, h2.sm-heading {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #eee;
+}
+
+a {
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #ee1a48;
+}
+
+main {
+  height: 100%;
+}
+main .icons {
+  margin-top: 2rem;
+}
+main .icons a {
+  padding: 0.4rem;
+  text-decoration: none;
+}
+main .icons a:hover {
+  transition: all 0.5s ease-out;
+  color: #ee1a48;
+}
+
+/*# sourceMappingURL=main.css.map */

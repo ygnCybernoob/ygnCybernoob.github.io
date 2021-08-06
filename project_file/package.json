@@ -1,0 +1,11 @@
+{
+  "name": "portolio_cybernoob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w ./scss/main.scss ./dist/css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
