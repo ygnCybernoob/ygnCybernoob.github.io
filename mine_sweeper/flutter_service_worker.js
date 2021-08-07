@@ -5,8 +5,8 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "main.dart.js": "13f27ccd478038368cb78322f07db9c5",
-"index.html": "32f175828ac7db75a7223929f66c6411",
-"/": "32f175828ac7db75a7223929f66c6411",
+"index.html": "c2ef7fec66cd168870de30a1fbe0ac28",
+"/": "c2ef7fec66cd168870de30a1fbe0ac28",
 "version.json": "06731013c3a8c691f918cd3903cfabc4",
 "assets/AssetManifest.json": "01d6f28497f08c0ac91f282bf97184a2",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
@@ -23,11 +23,11 @@ const RESOURCES = {
 // start.
 const CORE = [
   "/",
-"mine_sweeper/main.dart.js",
-"mine_sweeper/index.html",
-"mine_sweeper/assets/NOTICES",
-"mine_sweeper/assets/AssetManifest.json",
-"mine_sweeper/assets/FontManifest.json"];
+"main.dart.js",
+"index.html",
+"assets/NOTICES",
+"assets/AssetManifest.json",
+"assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
