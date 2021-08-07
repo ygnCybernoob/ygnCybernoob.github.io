@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Mine Sweeper Game in Flutter Web 2",
+    "description": "Mine Sweeper Game in Flutter",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
