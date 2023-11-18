@@ -30,7 +30,9 @@ const RESOURCES = {"version.json": "db2e42d21a6d4e503be6efbf62e6a561",
 "canvaskit/skwasm.wasm": "1a074e8452fe5e0d02b112e22cdcf455"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = ["main.dart.js",
+const CORE = [
+  "/",
+  "main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
